@@ -18,7 +18,8 @@
     <script type="text/javascript">
 	function showHideSidebarRightColumn(){
 		$('div.MainBox div.SidebarColumn').css('display')==='none'?$('div.MainBox div.SidebarColumn').show():$('div.MainBox div.SidebarColumn').hide();
-    }
+		$('div.MainBox div.SidebarColumn').css('display')==='none'?setCookie('SidebarColumnVisible', 'false', 2):setCookie('SidebarColumnVisible', 'true', 2);
+	}
     </script>
 
 <!--dtl:js_on_document_complete-->
